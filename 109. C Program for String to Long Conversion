@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() { 
+char str[50]; 
+scanf("%s", str); 
+long x = atol(str);
+printf("%ld\n", x); 
+  return 0; 
+}
