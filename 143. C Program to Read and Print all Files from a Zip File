@@ -1,0 +1,5 @@
+#include <stdio.h>
+int main() {
+printf("Requires external library like libzip, not standard C\n");
+return 0;
+}
