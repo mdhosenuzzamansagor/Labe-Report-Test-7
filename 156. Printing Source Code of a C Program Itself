@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main() {
+FILE *fp = fopen("program.c", "r");
+char c;
+while((c=fgetc(fp))!=EOF) putchar(c);
+fclose(fp);
+return 0;
+}
