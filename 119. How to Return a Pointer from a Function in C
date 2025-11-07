@@ -1,0 +1,7 @@
+#include <stdio.h>
+int* getPointer(int *x) { return x; }
+int main() {
+int a=10; int *ptr = getPointer(&a);
+printf("%d\n", *ptr); 
+return0;
+}
