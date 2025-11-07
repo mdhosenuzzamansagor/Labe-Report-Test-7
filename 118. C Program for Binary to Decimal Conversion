@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main() { 
+long bin; scanf("%ld", &bin); 
+int dec=0, i=0;
+while(bin>0){ dec+= (bin%10)*(1<<i); bin/=10; i++; }
+printf("%d\n", dec);
+return 0; 
+}
