@@ -1,0 +1,7 @@
+#include <stdio.h>
+double d; 
+char str[50]; 
+scanf("%lf", &d);
+sprintf(str,"%lf", d);
+printf("%s\n",str);
+return 0;
