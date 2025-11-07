@@ -1,0 +1,10 @@
+#include <stdio.h>
+struct Student { char name[50]; int age; };
+int main() {
+struct Student s={"Bob",21};
+FILE *fp=fopen("student.bin","wb"); fwrite(&s,sizeof(s),1,fp); fclose(fp);
+struct Student r; fp=fopen("student.bin","rb"); fread(&r,sizeof(r),1,fp);
+fclose(fp);
+printf("Name: %s Age: %d\n", r.name, r.age);
+return 0;
+}
