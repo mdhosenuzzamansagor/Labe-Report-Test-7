@@ -1,0 +1,6 @@
+#include <stdio.h>
+int main() {
+int x; // Syntax error if uncommented
+printf("Compile-time error example\n");
+return 0; 
+}
