@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main() {
+int x;
+scanf("%d", &x);
+char c = (char)x; 
+printf("%c\n", c);
+return 0; 
+}
