@@ -1,0 +1,3 @@
+#include <stdio.h>
+int main() { int h; scanf("%d", &h); printf("Minutes: %d, Seconds: %d\n", h*60,
+h*3600); return 0; }
