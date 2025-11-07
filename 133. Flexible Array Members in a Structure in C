@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+struct Flex { int n; int arr[]; };
+int main() {
+int size=3; struct Flex *f = malloc(sizeof(struct Flex)
++size*sizeof(int)); f->n=size;
+for(int i=0;i<size;i++) f->arr[i]=i*10;
+for(int i=0;i<size;i++) printf("%d ", f->arr[i]);
+free(f);
+return 0;
+}
