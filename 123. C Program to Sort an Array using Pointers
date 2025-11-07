@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+int arr[]={5,2,8,1}; int n=4; int *p=arr;
+for(int i=0;i<n-1;i++)
+for(int j=i+1;j<n;j++) 
+if(*(p+i)>*(p+j)){
+int t=*(p+i);
+*(p+i)=*(p+j); *(p+j)=t; }
+for(int i=0;i<n;i++)
+printf("%d ", *(p+i));
+return 0;
+}
