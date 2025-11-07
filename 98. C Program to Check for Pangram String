@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+char str[500]; fgets(str,500,stdin);
+int freq[26]={0};
+for(int i=0;i<strlen(str);i++) if(str[i]>='a' && str[i]<='z')
+freq[str[i]-'a']=1;
+int sum=0; for(int i=0;i<26;i++) sum+=freq[i];
+if(sum==26) printf("Pangram\n"); else printf("Not Pangram\n");
+return 0;
+}
