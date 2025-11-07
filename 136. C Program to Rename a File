@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+int res = rename("old.txt","new.txt"); 
+if(res==0) printf("File 
+renamed successfully\n"); else printf("Error renaming file\n"); 
+return 0;
+}
